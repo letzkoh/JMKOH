@@ -6,22 +6,20 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
    <script type="text/javascript">
+     
+   var num = 0;
+   var str = '';
       
-   document.write('이건 출력문이구나' + '<br/>');
-   /*객체.메소드*/
+   num = 1;
+   str = '2';
    
-   	/* 표현식
-   var 변수명*/
-   var num = 10;
-   var sum = num + 2;
+   var sum = 0;
+   
+   sum = num + str;
    
    document.write(sum);
-   
-   var testStr = '자바';
-   var txt1 = "스크립티";
-   
-   document.write(testStr + txt1);
-   
+    	  
+    	  
    </script>
 </head>
 

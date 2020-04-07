@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>autocomplete 속성</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>자동완성 기능</legend>
+			<ul>
+				<li><label for="phone">전화번호</label> 
+					<input type="tel" id="phone" autocomplete="off" />
+				</li>
+				<li>
+					<label for="email">이메일</label>
+					<input type="email" id="email" autocomplete="on" />
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>

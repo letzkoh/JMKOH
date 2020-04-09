@@ -12,6 +12,7 @@
 
 <body>
 	<div>
+	<!--2번째 ul의 첫번째 li 색변경  -->
 		<h1>선택자</h1>
 		<h2 id="title">원거리 선택자</h2>
 		<ul>
@@ -32,15 +33,13 @@
 
 </body>
 <script type="text/javascript">
-	var liObjArr = document.getElementsByTagName('li');
-	var myObj = liObjArr[1];
-	myObj.style.border = '1px solid red';
-	
-	var liObjArr = document.getElementsByTagName('li');
-	var myObj = liObjArr[7];
-	myObj.style.backgroundColor = 'green';
+	var ulObjArr = document.getElementsByTagName('ul')[1];
+	var liObjArr = ulObjArr.getElementsByTagName('li')[1];
+	liObjArr.style.border = '1px solid red';
+	/* document.write(liObjArr); */
 	
 	
+			
 	
 </script>
 

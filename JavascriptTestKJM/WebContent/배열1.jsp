@@ -12,31 +12,31 @@
    <div>
       <h1>선택자</h1>
       <h2 id="title">
-         원거리 선택자
+        	 원거리 선택자
       </h2>
       <ul>
          <li>
             getElementById
-            경계선 색상이 파란색이다
+           	 경계선 색상이 파란색이다
          </li>
          <li>
             getElementsByTagnName
-            경계선 색상이 파란색이다
+           	 경계선 색상이 파란색이다
          </li>
       </ul>
       <h2 id="title2">
-         근거리 선택자
+         	근거리 선택자
       </h2>
       <ul id="list">
          <li>
-            parentNode
-            배경색이 동일한 원하는 색이고 
-            경계선도 자신이 원하는 동일한 색이다
+          parentNode
+	            배경색이 동일한 원하는 색이고 
+	            경계선도 자신이 원하는 동일한 색이다
          </li>
          <li>
-            childNodes
-            배경색이 동일한 원하는 색이고 
-            경계선도 자신이 원하는 동일한 색이다
+          childNodes
+	            배경색이 동일한 원하는 색이고 
+	            경계선도 자신이 원하는 동일한 색이다
          </li>
          <li>
             children

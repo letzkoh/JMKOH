@@ -4,9 +4,6 @@
 <html>
 <head>
 <title>웹 문서구조2</title>
-
-
-
 </head>
 <body>
    <div>

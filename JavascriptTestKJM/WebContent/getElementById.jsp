@@ -40,10 +40,10 @@
 		myObj.style.backgroundColor = 'yellow';
 	
  	var myObj1 = document.getElementById('title2');
-		myObj1.style.border = '1px dotted black';
+		myObj1.style.border = '10px dotted red';
 	
 	var myObj2 = document.getElementById('list');
-		myObj2.style.fontSize = '10px'; 
+		myObj2.style.fontSize = '20px'; 
 		myObj2.style.textAlign = 'center';
 		
 </script>

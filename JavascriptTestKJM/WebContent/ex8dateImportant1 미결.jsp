@@ -9,7 +9,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <script type="text/javascript">
 
-	document.write("<h1>현재날짜/시간 정보</h1>")
+/* 	document.write("<h1>현재날짜/시간 정보</h1>")
 	
 	var today = new Date();
 	
@@ -27,15 +27,49 @@
 	document.write("시: " + nowHours + "<br />");
 	document.write("분: " + nowMinutes + "<br />");
 	document.write("초: " + nowSeconds + "<br />");
-	document.write("경과시간: " + nowTime + "<br />");
+	document.write("경과시간: " + nowTime + "<br />"); */
 
+	
 	document.write("<h1>날짜 바꾸기</h1>")
-	today.setMonth(11); //월을 12월로 지정
-	today.setDate(25); //일을 25일로 지정
+	
+	var today = new Date();
+	
+	today.setMonth(4); //월을 12월로 지정
+	today.setDate(12); //일을 25일로 지정
+	
+	today.setDay();
+
+	switch (today.getDay()) {
+	case 0:"일요일";
+		break;
+
+	case 1:"월요일";
+	break;
+	
+	case 2:"화요일";
+	break;
+	
+	case 3:"수요일";
+	break;
+	
+	case 4:"목요일";
+	break;
+		
+	case 5:"금요일";
+	break;
+	
+	case 6:"토요일";
+	break;
+
+	default:
+		break;
+	}
+	
 
 	document.write("월: " + today.getMonth() + "<br />");
 	document.write("일: " + today.getDate() + "<br />");
-
+	document.write("요일: " + today.getDay() + "<br />");
+	
 </script>
 
 </head>

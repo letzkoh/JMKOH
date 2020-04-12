@@ -10,6 +10,7 @@
 	function dateTestFnc() {
 
 		var today = new Date();
+		
 		var nowYear = today.getFullYear();
 		var nowMonth = today.getMonth() + 1; //현재 월  (0~11)   : 0이 1월
 		var nowDate = today.getDate(); //현재 일
@@ -30,7 +31,8 @@
 			}
 		}
 
-		document.getElementById('dateTxt').value = nowYear + "-" + nowMonth	+ "-" + nowDate + " " + str;
+		document.getElementById('dateTxt').value
+		= nowYear + "-" + nowMonth	+ "-" + nowDate + " " + str;
 
 		/* setAttribute 신기 */
 		/* document.getElementById('dateTxt').setAttribute('value', nowYear + "-" + nowMonth + "-" + nowDate +" "+ str); */

@@ -34,41 +34,45 @@
 	
 	var today = new Date();
 	
-	today.setMonth(4); //월을 12월로 지정
+	today.setMonth(3); //월을 12월로 지정
 	today.setDate(12); //일을 25일로 지정
-	
-	today.setDay();
 
 	switch (today.getDay()) {
-	case 0:"일요일";
-		break;
+	case 0:
+		var day = "일요일";
+	break;
 
-	case 1:"월요일";
+	case 1:
+		var day = "월요일";
 	break;
 	
-	case 2:"화요일";
+	case 2:
+		var day = "화요일";
 	break;
 	
-	case 3:"수요일";
+	case 3:
+		var day = "수요일";
 	break;
 	
-	case 4:"목요일";
+	case 4:
+		var day = "목요일";
 	break;
 		
-	case 5:"금요일";
+	case 5:
+		var day = "금요일";
 	break;
 	
-	case 6:"토요일";
+	case 6:
+		var day = "토요일";
 	break;
 
 	default:
 		break;
 	}
 	
-
 	document.write("월: " + today.getMonth() + "<br />");
 	document.write("일: " + today.getDate() + "<br />");
-	document.write("요일: " + today.getDay() + "<br />");
+	document.write("요일: " + day + "<br />");
 	
 </script>
 

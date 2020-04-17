@@ -9,19 +9,22 @@
 	
 </script>
 </head>
+
 <body>
 
-	<p>Select a new car from the list.</p>
-	
-	<input id="mySelect" type="text" onchange="myFunction()">
+	<h2>JavaScript Number Methods</h2>
+
+	<p>The toString() method converts a number to a string.</p>
 
 	<p id="demo"></p>
 
 	<script>
-		function myFunction() {
-			var x = document.getElementById("mySelect").value;
-			alert(x.length + "자리수입니다.");
-		}
+		var x = 123;
+		document.getElementById("demo").innerHTML
+			= x.toString() + "<br>"	+ (123).toString() + "<br>" + (100 + 23).toString();
 	</script>
+
+
+
 </body>
 </html>

@@ -5,27 +5,47 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript">
-	
-</script>
+
 </head>
 
 <body>
-	<h2>JavaScript Number Methods</h2>
 
-	<p>The valueOf() method returns a number as a number:</p>
+	1.숫자를 입력해주세요
+	<input id='yourNumber1' type="text" value=""> 2.숫자를 입력해주세요
+	<input id='yourNumber2' type="text" value="">
 
-	<p id="demo"></p>
+	<div>
+		<input type="button" value="+10버튼" onclick="testFnc();">
+		<!--       <button onclick="plusFnc();">두 수를 더하는 버튼</button> -->
+	</div>
+	<div id='resultTag' style="border: 1px solid black; font-size: 40px;">
 
-	<script>
-		var x = '123'; //알아서 형변환을 시켜줌 문자형->숫자
-		
-		alert(x.valueOf()*10);
-		
-		/* document.getElementById("demo").innerHTML
-			= x.valueOf() + "<br>" + (123).valueOf() + "<br>" + (100 + 23).valueOf(); */
-	</script>
-
+	</div>
 
 </body>
+<script type="text/javascript">
+	function testFnc() {
+		var yourNumber1InputTag = document.getElementById('yourNumber1');
+
+		var numval = yourNumber1InputTag.value;
+
+		var result = Number(numval) + 10;
+
+		var resultTagDivTag = document.getElementById('resultTag');
+
+		if (isNaN(result)) {
+			alert('숫자가 아닙니다.');
+			return;
+		}
+
+		/* if (result.toString() == "NaN") {
+			result = '';
+			alert("숫자만 입력해주세요.");
+		} */
+
+		resultTagDivTag.innerHTML = result;
+
+	}
+</script>
+
 </html>

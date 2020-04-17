@@ -5,23 +5,38 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript">
-	function calcFnc() {
-		var inputNum = document.getElementById('yourNumberObj');
-		var inputNum1 = inputNum.value;
-		var inputNum2 = Number(inputNum1);
-		
-		var result = inputNum2 + 10;
-		alert(result);
+<style type="text/css">
+p {
+	background-color: orange;
+}
+</style>
 
-	}
-</script>
 </head>
 
 <body>
-	숫자를 입력해주세요
-	<input id='yourNumberObj' type="text">
-	<input type='button' value="계산버튼" onclick="calcFnc();"> 버튼을 누르면 누군가 적은 숫자를 +10 해준다.
+
+	<img id='myImg' onmouseenter="bigImg();" onmouseleave="normalImg();"
+		border="5  px;" src="./images/img1.jpg" alt="Smiley" width="100"
+		height="100">
+
+	<p>The function bigImg() is triggered when the user moves the mouse
+		pointer onto the image.</p>
+	<p>The function normalImg() is triggered when the mouse pointer is
+		moved out of the image.</p>
 
 </body>
+<script type="text/javascript">
+	function bigImg() {
+		var x = document.getElementById('myImg');
+		x.style.height = "200px";
+		x.style.width = "200px";
+	}
+
+	function normalImg() {
+		var x = document.getElementById('myImg');
+		x.style.height = "100px";
+		x.style.width = "100px";
+	}
+</script>
+
 </html>

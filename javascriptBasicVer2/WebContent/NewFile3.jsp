@@ -6,22 +6,32 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-
 	
-	function masterGugudanFnc(dan) {
-		
-		var str1 = dan.trim(); //공백자르기
-		var str2 = Number(str1); //숫자로 변환
-		var str = str2 + 100; // 숫자로 계산
-		alert(str);
-				
-	}
 </script>
-
 </head>
-
 <body>
-	<input type="button" onclick="masterGugudanFnc('   2   ');"	value="2단">
 
+	<p>Select a new car from the list.</p>
+	
+	<input type="text"  onchange="myFunction()">
+
+	<select id="mySelect" onchange="myFunction()">
+		<option value="Aud">Aud</option>
+		<option value="BMW">BMW</option>
+		<option value="Mer">Mer</option>
+		<option value="Vol">Vol</option>
+	</select>
+
+	<p>When you select a new car, a function is triggered which outputs
+		the value of the selected car.</p>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("mySelect").value;
+			alert("You selected: " + x);
+		}
+	</script>
 </body>
 </html>

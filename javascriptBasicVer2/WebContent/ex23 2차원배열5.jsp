@@ -8,12 +8,10 @@
 <script type="text/javascript">
 	var numArr = new Array();
 /* 	var ctn = 0; */
-	
 	 
 	for (var i = 0; i < 5; i++) {
 		numArr[i] = new Array();	
 	}
-	
 	
 	for (var i = 0, ctn = 0; i < numArr.length; i++) {
 		for (var n = 0; n < 4; n++) {

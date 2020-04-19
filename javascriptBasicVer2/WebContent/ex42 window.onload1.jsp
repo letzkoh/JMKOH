@@ -14,8 +14,8 @@
 	window.onload = function() {
 		var myBtn = document.getElementById('divBtn');
 		myBtn.onclick = tempFnc;
-		alert(myBtn.style.border);
-	}
+		alert(tempFnc.style.border);
+		}
 </script>
 </head>
 

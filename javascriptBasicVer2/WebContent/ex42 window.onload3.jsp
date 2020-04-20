@@ -8,22 +8,26 @@
 
 <script type="text/javascript">
 	
-	window.onload = function() {
+	window.onload = function() { // 전체다 읽고 호출하므로 함수명이 없음
 		var obj = document.getElementById('mainText');
 		obj.style.border = '1px solid black';
+		
+		//온클릭을 함수안에 집어 넣는 방법
+		
 	}
 	
 	function showInfoFnc() {
 		var obj = document.getElementById('mainText');
 		
 		var objName = document.getElementById('nameStr');
-		var nameResult = objName.value;
-				
 		var objBirth = document.getElementById('birthStr');
-		var birthResult = objBirth.value;
 		
-		obj.innerHTML  =	'이름 : ' + nameResult + '<br/>';
-		obj.innerHTML +=	'태어난해 : ' + birthResult;
+		var htmlStr = '';
+		
+		htmlStr  =	'이름 : ' + objName.value + '<br/>';
+		htmlStr +=	'태어난해 : ' + objBirth.value;
+		obj.innerHTML = htmlStr;
+		
 	}
 	
 </script>

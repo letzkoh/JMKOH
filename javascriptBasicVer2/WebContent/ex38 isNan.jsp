@@ -15,11 +15,8 @@
 	2.숫자를 입력해주세요
 	<input id='yourNumber2' type="text" value="">
 
-	<div>
-		<input type="button" value="+10버튼" onclick="testFnc();">
-	</div>
-	<div id='resultTag' style="border: 1px solid black; font-size: 40px;">
-	</div>
+	<div><input type="button" value="+10버튼" onclick="testFnc();"></div>
+	<div id='resultTag' style="border: 1px solid black; font-size: 40px;"></div>
 
 </body>
 <script type="text/javascript">

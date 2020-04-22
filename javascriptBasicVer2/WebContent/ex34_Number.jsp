@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<input type="buton">
+	<input type="button">
 </body>
 
 <script>

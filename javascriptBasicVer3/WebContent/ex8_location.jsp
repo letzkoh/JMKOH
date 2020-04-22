@@ -10,18 +10,13 @@
 
 	function aTagLikeFnc() {
 		location.href = 'https://www.w3schools.com/html/html_intro.asp';
-		
 	}
 
 </script>
-
-
 </head>
-
 <body>
 
 	<img src="./Niagara.jpg" onclick="aTagLikeFnc()" >
-
 
 </body>
 </html>

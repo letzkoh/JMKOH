@@ -10,7 +10,7 @@
 
 	window.onload = function () {
 		var objInput = document.getElementById('inputCharName');
-		var promptText = '';
+//		var promptText = '';
 		promptText = prompt('게임아이디를 적어주세요?'); 
 		objInput.value = promptText; 
 	}

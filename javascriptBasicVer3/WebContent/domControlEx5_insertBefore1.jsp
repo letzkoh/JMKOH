@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
+
 	window.onload = function() {
 		var theListObj = document.getElementById('theList');
 		
@@ -21,16 +22,17 @@
 		
 		theListObj.insertBefore(liTag, liObjList[2]);
 	}
+	
 </script>
 </head>
 
 <body>
+<!-- HTML에서 리스트3이 빠지고 리스트3을 추가하여 출력되도록 하는 것  -->
 	<h1>문서 객체 조작</h1>
 
 	<ul id='theList'>
 		<li>리스트1</li>
 		<li>리스트2</li>
-<!-- HTML에서 리스트3이 빠지고 리스트3을 추가하여 출력되도록 하는 것  -->
 		<li>리스트4</li>
 	</ul>
 

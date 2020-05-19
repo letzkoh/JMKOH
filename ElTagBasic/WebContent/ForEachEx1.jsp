@@ -33,10 +33,16 @@
 	</ul>
 	
 	<ol>
-		<c:forEach var="name" items="${nameList}" begin="0" end="1">
+		<c:forEach var="name" items="${nameList}" begin="0" end="2">
 			<li>${name}</li> <!-- nameList를 조회해서 출력 -->
 		</c:forEach>
 	</ol>
+	
+	<div>
+		<c:forEach var="name" items="${nameList}" varStatus="indexVal">
+			<span>${indexVal.index}</span><span>${name}</span>
+		</c:forEach>
+	</div>
 	
 </body>
 </html>
